@@ -81,3 +81,49 @@
   margin: 0;
   color: #1f2937;
 }
+
+.submission-list {
+  margin-top: 18px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 14px;
+}
+
+.submission-list h3 {
+  margin: 0 0 10px;
+  color: #1f2937;
+}
+
+.empty-text {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.submission-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.submission-item p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #111827;
+}
+
+.delete-btn {
+  border: none;
+  background: #dc2626;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
