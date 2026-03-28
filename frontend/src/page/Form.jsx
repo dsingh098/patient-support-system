@@ -3,7 +3,7 @@ import axios from "axios";
 import "./Form.css";
 
 const Form = () => {
-  const API_BASE_URL = "https://https-github-com-dsingh098-patient.onrender.com";
+  const API_BASE_URL = "https://patient-support-system.onrender.com";
 
   const [formData, setFormData] = useState({
     name: "",
