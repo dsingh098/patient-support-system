@@ -3,7 +3,8 @@ import axios from "axios";
 import "./Form.css";
 
 const Form = () => {
-  const API_BASE_URL = "https://patient-support-system.onrender.com";
+  const API_BASE_URL =
+    import.meta.env.VITE_API_BASE_URL || "https://patient-support-system.onrender.com/api/users";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -45,10 +46,7 @@ const Form = () => {
     setResponse("");
 
     try {
-      const res = await axios.post(
-        `${API_BASE_URL}/submit`,
-        formData
-      );
+      const res = await axios.post(`${API_BASE_URL}/submit`, formData);
 
       setResponse(res.data.message);
       setSubmissions((prev) => [res.data.data, ...prev]);
